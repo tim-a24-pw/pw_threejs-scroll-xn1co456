@@ -1,0 +1,45 @@
+/* ==========================================================================
+   SECTION / COMPONENTS
+   ========================================================================== */
+
+.section {
+    padding: var(--spacing-xl) calc(var(--spacing-md) / 2);
+    display: grid;
+    gap: 30px;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    &:nth-child(odd)  {
+        background: red;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+.section__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .col {
+        grid-column: span 5;
+    }
+    .section:nth-child(even) & .col {
+        grid-column: 7 / -1;
+    }
+}
+
+.section--callout {
+    background: var(--color-neutral-dark);
+    color: var(--color-white);
+}
+
+.section .wrapper > *:first-child {
+    margin-top: 0;
+}

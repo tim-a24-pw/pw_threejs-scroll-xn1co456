@@ -1,0 +1,23 @@
+/* ==========================================================================
+   nav / component
+   ========================================================================== */
+
+.nav,
+.menu {
+    ul {
+        display: flex;
+        gap: var(--spacing-md);
+        list-style: none;
+    }
+
+    a {
+        font: bold 14px/1 var(--font-secondary);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    // Ça serait cool d'avoir un sélecteur ici pour un élément de navigation actif
+    .current_page_item {
+        text-decoration: underline;
+    }
+}

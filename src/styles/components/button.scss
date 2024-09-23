@@ -1,0 +1,22 @@
+/* ==========================================================================
+   button / component
+   ========================================================================== */
+
+.btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 5px;
+    border: none;
+    font: bold 14px/1 var(--font-secondary);
+    cursor: pointer;
+    outline: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: all 0.8s $ease-out-expo;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-black);
+        color: var(--color-secondary);
+    }
+}

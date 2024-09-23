@@ -1,0 +1,38 @@
+/* ==========================================================================
+   header / component
+   ========================================================================== */
+
+.header {
+    //color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .wrapper {
+        border-bottom: 2px solid var(--color-black);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--spacing-sm) 0;
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font: 700 40px/1 var(--font-tertiary);
+    perspective: 600px;
+
+    .icon {
+        transition: transform $ease-out-back 0.8s;
+    }
+
+    &:hover {
+        .icon {
+            transform: rotateY(180deg);
+        }
+    }
+}

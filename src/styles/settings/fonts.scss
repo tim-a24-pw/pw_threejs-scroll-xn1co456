@@ -1,0 +1,21 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Lora', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --font-tertiary: 'Ubuntu', sans-serif;
+
+    --font-size-content: 1.125rem;
+
+    --font-size-button: 1.25rem;
+
+    /// Grosseur des textes
+    --font-size-h1: 4.25rem;
+    --font-size-h2: 2.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h5: 1.4rem;
+    --font-size-h6: 1.2rem;
+}
